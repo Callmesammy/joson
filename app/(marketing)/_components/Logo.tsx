@@ -2,13 +2,20 @@
 import Image from "next/image";
 const Logo=()=>{
     return(
-     <div className="flex flex-col relative mx-3 p-3 pb-4 space-x-10 w-[55px] h-[50px]  ">
+     <div className=" hidden lg:flex relative mx-3 p-3 pb-4 gap-x-10 w-[55px] h-[50px]  ">
         <Image
         src="/logo.svg"
         alt="logo"
        fill
+       className="dark:hidden"
          />
-         <p className="font-bold ">MotionMW</p>
+          <Image
+        src="/logo-dark.svg"
+        alt="logo"
+       fill
+       className="dark:block hidden"
+         />
+         <p className="font-bold mx-10 ">MotionMW</p>
         </div>
     )
 }

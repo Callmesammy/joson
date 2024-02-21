@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import Picture from "./_components/Picture";
 
